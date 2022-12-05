@@ -1,0 +1,523 @@
+@font-face {
+    font-family: Yekan;
+    src: url(fonts/Yekan.ttf);
+}
+*{
+    font-family: Yekan;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+::placeholder{
+    font-size: 17px;
+}
+
+
+
+
+/* Start style box-right */
+
+.box-right{
+    border: 1px solid black;
+    background-image: url(img/background/dark-hexagonal-background-with-gradient-color_79603-1410.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease 300ms;
+    position: fixed;
+    right: 0;
+    width: 20%;
+    height:100%;
+}
+
+
+
+.box-right img{
+    width: 40%;
+    border-radius: 100px;
+    margin: 20px;
+}
+
+.box-right ul li{
+    text-align: right;
+    list-style-type: none;
+    padding: 5px 10px 5px 0px;
+    width: 100%;
+}
+
+.box-right ul{
+    padding: 10px;
+    transition: all ease 300ms;
+}
+
+.box-right ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.box-right ul li:hover{
+    background-color: antiquewhite;
+    transition: all ease 300ms;
+    border-radius: 5px;
+}
+.box-right ul li:hover a{
+    color: black;
+    transition: all ease 300ms;
+}
+
+.nav-active{
+    background-color: antiquewhite;
+    color: red;
+}
+
+/* End style box-right */
+
+/* Start style box-left */
+
+.box-left{
+    /* position: absolute; */
+    /* left: 0; */
+    position: absolute;
+    left: 0;
+    height:auto;
+    width:80%;
+    /* background-image: url(img/background/modern-white-background-free-vector.jpg); */
+    padding: 10px;
+    height: 100%;
+}
+
+.Tab{
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.box-left h2{
+    text-align: center;
+}
+
+.Box-Add-Search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px;
+}
+
+.Box-Add-Search input{
+    text-align: right;
+    width: 300px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+.Plus{
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.Box-Edit-Trash span{
+    margin: 5px;
+}
+
+.Edit{
+    color: rgb(212, 212, 1);
+    cursor: pointer;
+}
+.Trash{
+    color: red;
+    cursor: pointer;
+}
+
+.Posts , .Gallery , .Works{
+    text-align: center;
+}
+
+.Posts h5 , .Gallery h5 , .Works h5 {
+    font-size: 25px;
+}
+
+.Link{
+    text-decoration: none;
+}
+
+.Box-AddUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.Form{
+    width: 70%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input-large{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.input-large label{
+    float: right;
+    text-align: right;
+    padding: 0px 20px 0px 0px;
+    font-size: 20px;
+}
+
+
+.input-large input{
+    width: 95%;
+    text-align: right;
+    padding: 10px 5px 10px 0px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgb(1, 1, 82);
+    margin: 10px;
+}
+
+.Address{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+
+.Address input{
+    margin: 10px;
+    width: 95%;
+    text-align: right;
+    padding: 10px 5px 10px 0px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgb(1, 1, 82);
+    margin: 10px;
+}
+
+
+
+.SubmitButton-AddUser{
+    padding: 8px 30px 8px 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    transition: all ease 200ms;
+}
+
+.SubmitButton-AddUser:hover{
+    box-shadow: 0px 0px 10px 2px green;
+    transform: scale(0.95);
+}
+.ResetButton-AddUser{
+    padding: 8px 30px 8px 30px;
+    border: 1px solid gray;
+    color: black;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    transition: all ease 200ms;
+}
+.ResetButton-AddUser:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    transform: scale(0.95);
+}
+.BackToHomeButton-AddUser{
+    padding: 8px 30px 8px 30px;
+    background-color: red;
+    border:none;
+    color: white;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    transition: all ease 200ms;
+}
+.BackToHomeButton-AddUser:hover{
+    box-shadow: 0px 0px 10px 2px red;
+    transform: scale(0.95);
+}
+
+/* Start Style Box Gallery */
+
+.photo{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.Item-Gallery{
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all ease 250ms;
+    box-shadow: 0px 0px 5px 2px darkcyan;
+}
+.Item-Gallery:hover{
+    letter-spacing: 3px;
+    box-shadow: 0px 0px 10px 2px black;
+    transform: scale(0.95);
+}
+
+.Item-Gallery:hover::after{
+    content: "";
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: black;
+    display: block;
+    opacity: 0.5;
+    left: 5.5%;
+    top: 4%;
+    border-radius: 10px;
+}
+
+.Box-Gallery{
+    width: 100%;
+}
+
+.Form-100{
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* End Style Box Gallery */
+
+/* Start Style Box Works */
+.Item-Works{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all ease 250ms;
+    box-shadow: 0px 0px 5px 2px darkcyan;
+}
+
+.Item-Works:hover{
+    box-shadow: 0px 0px 10px 2px black; 
+    transform: scale(0.95);
+}
+.radiobutton{
+    width: 20%;
+}
+/* End Style Box Works */
+
+/* Start Style Box Posts */
+
+.Box-Posts{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    place-items: center;
+}
+
+.Item-Posts{
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all ease 250ms;
+    box-shadow: 0px 0px 5px 2px darkcyan;
+}
+
+.Item-Posts:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    transform: scale(0.95)
+}
+
+.pa-10{
+    padding: 10px;
+}
+
+.textarea{
+    min-width: 96% !important;
+    max-width: 96% !important;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgb(1, 1, 82);
+    margin: 10px;
+    min-height: 150px;
+}
+
+.Select{
+    width: 95%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgb(1, 1, 82);
+    margin: 10px;
+    text-align: right;
+    padding: 5px 0px 5px 0px;
+}
+
+
+
+.Comments{
+    width: 95%;
+    height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    left: 2.5%;
+    box-shadow: 0px 0px 10px 5px wheat;
+    border: 1px solid black;
+    z-index: 9999;
+    background-color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.Item-comment{
+    display: grid;
+    grid-template-columns: 80% 18%;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.Item-comment h5{
+    font-size: 20px;
+}
+
+.fadein{
+    opacity: 0;
+    transition: all ease 1s;
+}
+/* End Style Box Posts */
+
+
+
+
+
+
+.danger{
+    background-color: red;
+    padding: 6px 50px 6px 50px;
+    margin: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: all ease 250ms;
+}
+
+.danger:hover{
+    transform: scale(0.9);
+}
+
+.success{
+    background-color: green;
+    padding: 6px 50px 6px 50px;
+    margin: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: all ease 250ms;
+}
+
+.success:hover{
+    transform: scale(0.9);
+}
+
+.just-a-moment{
+    font-size: 35px;
+    color: brown;
+    text-align: center; 
+}
+
+/* Start Box Remove And Show Sidebar */
+@media only screen and (max-width:650px){
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .box-right{
+        width: 50%;
+        position: absolute;
+        right: 0;
+        height: 785px;
+        z-index: 9999;
+    }
+    .box-left{
+        width: 95%;
+        position: absolute;
+        left: 0;
+        height: auto;
+    }
+    
+    .box-right.block{
+        width: 50%;
+    }
+
+    .box-right.remove{
+        width: 0%;
+    }
+    
+
+    .Tab{
+        display: block;
+    }
+    .Address{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .Address input{
+        margin: 10px;
+    }
+    .bars{
+        font-size: 20px;
+    }
+
+    .times{
+        color: red;
+        font-size: 20px;
+    }
+}
+/* End Box Remove And Show Sidebar */
